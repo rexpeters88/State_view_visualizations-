@@ -118,7 +118,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Load data and create layers
   Promise.all([
-    d3.csv("startup_data_cleaned.csv"),
+    d3.csv("./States/startup_data_cleaned.csv"),
     d3.json(geoJsonUrl)
   ]).then(([csvData, geoJsonData]) => {
     const averageFunding = calculateAverageFunding(csvData);
